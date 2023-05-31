@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Soma de Horarios</title>
+<head>
+<body>
+
+    <title>Calculadora de Horas</title>
+    
+</head>
+<body>
+    <h1>Calculadora de Horas</h1>
+
+    <label class="texth" for="horaInicial">Hora Inicial:</label>
+    <input class="input" type="number" id="horaInicial" min="0" max="23">
+    <input class="input" type="number" id="minutoInicial" min="0" max="59">
+
+    <label class="texth" for="horaFinal">Hora Final:</label>
+    <input class="input" type="number" id="horaFinal" min="0"   max="23">
+    <input class="input" type="number" id="minutoFinal" min="0" max="59">
+
+    <button class="botao" onclick="calcular()">Calcular</button>
+
+    <p class="result" id="resultado"></p>
+
+    <script>
+        function calcular() {
+            var horaInicial = parseInt(document.getElementById("horaInicial").value);
+            var minutoInicial = parseInt(document.getElementById("minutoInicial").value);
+            var horaFinal = parseInt(document.getElementById("horaFinal").value);
+            var minutoFinal = parseInt(document.getElementById("minutoFinal").value);
+
+            // Realizar a soma
+            var somaHoras = horaInicial + horaFinal;
+            var somaMinutos = minutoInicial + minutoFinal;
+
+            // Verificar se os minutos ultrapassam 59
+            if (somaMinutos >= 60) {
+                somaMinutos -= 60;
+                somaHoras += 1;
+            }
+
+            // Verificar se as horas ultrapassam 23
+            if (somaHoras > 23) {
+                somaHoras %= 24;
+            }
+
+            // Verificar se a soma resultou em valor negativo
+            if (somaHoras < 0) {
+                somaHoras *= -1;
+            }
+
+            // Exibir o resultado
+            var resultado = document.getElementById("resultado");
+            resultado.textContent = "Resultado: " + somaHoras + ":" + padZero(somaMinutos);
+        }
+
+        function padZero(number) {
+            return number.toString().padStart(2, '0');
+        }
+    </script>
+</body>
+</html>
