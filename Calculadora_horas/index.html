@@ -36,11 +36,11 @@
 
             // Realizar a soma
             var somaHoras = horaInicial + horaFinal;
-            var somaMinutos = minutoInicial + minutoFinal;
+            var somaMinutos = minutoInicial + minutoInicial;
 
             // Verificar se os minutos ultrapassam 59
-            if (somaMinutos >= 60) {
-                somaMinutos -= 60;
+            if (somaMinutos >= 59) {
+                somaMinutos -= 59;
                 somaHoras += 1;
             }
 
@@ -56,7 +56,7 @@
 
             // Exibir o resultado
             var resultado = document.getElementById("resultado");
-            resultado.textContent = "Resultado: " + somaHoras + ":" + padZero(somaMinutos);
+            resultado.textContent = "Resultado: " + somaHoras + ":" + padZero(somaHoras);
         }
 
         function padZero(number) {
