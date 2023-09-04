@@ -1,0 +1,63 @@
+[
+    {
+        "placa": "ABC123",
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "ano": 2020
+    },
+    {
+        "placa": "XYZ456",
+        "marca": "Honda",
+        "modelo": "Civic",
+        "ano": 2019
+    },
+    {
+        "placa": "DEF789",
+        "marca": "Ford",
+        "modelo": "Raptor f-150",
+        "ano": 2023
+    },
+    {
+        "placa": "GHI101",
+        "marca": "Volkswagen",
+        "modelo": "Golf GTI",
+        "ano": 2018
+    },
+    {
+        "placa": "JKL112",
+        "marca": "Chevrolet",
+        "modelo": "Impala",
+        "ano": 1967
+    },
+    {
+        "placa": "MNO131",
+        "marca": "Subaro",
+        "modelo": "Impreza",
+        "ano": 2007
+    },
+    {
+        "placa": "PQR141",
+        "marca": "Nissan",
+        "modelo": "350z",
+        "ano": 2002
+    },
+    {
+        "placa": "STU151",
+        "marca": "Mazda",
+        "modelo": "Rx7",
+        "ano": 1990
+    },
+    {
+        "placa": "VWX161",
+        "marca": "Nissan",
+        "modelo": "Skyline R34",
+        "ano": 1999
+    },
+    {
+        "placa": "TGH693",
+        "marca": "Toyota",
+        "modelo": "Supra",
+        "ano": 1993
+    }
+  ]
+  
